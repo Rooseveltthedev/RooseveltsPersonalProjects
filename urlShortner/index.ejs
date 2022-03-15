@@ -1,0 +1,38 @@
+This a project created in Node.js to shorten URLs<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <h1>URL Shrinker</h1>
+    <form action = "/shortUrls" method = "POST" class="my-4 form-inline">
+        <label for = "fullUrl" class="sr-only">Url</label>
+        <input required placeholder="Url" type= "url" name="fullUrl" id="fullUrl" class ="form-control col mr-2">
+        <button class="btn btn-success" type ="submit">Shrink</button>
+
+    </form>
+
+    <table class="table table-striped table-responsive">
+        <thead>
+            <tr>
+                <th>Full URL</th>
+                <th>Short URL</th>
+                <th>Clicks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://github.com/Rooseveltthedev">https://github.com/Rooseveltthedev</a></td>
+                <td><a href="/123456">123456</a></td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
